@@ -29,7 +29,7 @@
                   Previously, I earned dual Bachelor's degrees in Mechanical Engineering from the <a href="https://researchdirectory.uc.edu/p/dongjg">University of Cincinnati (UC)</a> and <a href="https://english.cqu.edu.cn/">Chongqing University (CQU)</a>. 
                   During my undergraduate studies, I also completed a minor in Robotics at UC.
                   Throughout this period, I engaged in research under the mentorship of <a href="https://researchdirectory.uc.edu/p/dongjg">Professor Janet Jiaxiang Dong</a> and <a href="https://accu.cqu.edu.cn/info/1251/4955.htm">Professor Rui Li</a>. 
-                  In addition, in 2022, I collaborated with <a href="https://www.mtu.edu/biomedical/people/graduate/mu.html">Nan Mu</a> at <a href="https://www.mtu.edu/">Michigan Technological University (MTU)</a>.
+                  In addition, in 2022, I collaborated with <a href="https://www.mtu.edu/biomedical/people/graduate/mu.html">Nan Mu</a> and <a href=https://www.mtu.edu/biomedical/people/faculty/jiang/Jingfeng>Professor Jingfeng Jiang at <a href="https://www.mtu.edu/">Michigan Technological University (MTU)</a>.
                 <p style="text-align:center">
                   <a href="mailto:jinjaguo@umich.edu">Email</a> &nbsp;/&nbsp;
                   <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
@@ -255,7 +255,6 @@
       </script>
     <!--视频2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222-->
 
-
     <tr>
     <!--图片变化333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
     <style>
@@ -314,98 +313,280 @@
         </td>
       </tr>
       
-    <!--图片变化333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+    <!--图片变化333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+    <!--视频4444444444444444444444444444444444444444444444444444444444444444444444444444444444-->
+    <style>
+      /* 样式调整，保证图片和视频尺寸一致 */
+      .one {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1; /* 保持正方形 */
+      }
+      
+      .two {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0; /* 初始隐藏视频 */
+        transition: opacity 0.2s ease-in-out;
+      }
+      
+      .one img,
+      .one video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      </style>
+      
+      <tr onmouseout="r2r_stop_3()" onmouseover="r2r_start_3()">
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id="bot_image">
+              <video muted autoplay loop playsinline>
+                <source src="images/bot.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <img src="images/bot.png" alt="LP Preview">
+          </div>
+        </td>
+        
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="data\ROB_550_Report_PM_Group6.pdf">
+            <span class="papertitle">Autonomous SLAM and Exploration with MBot</span>
+          </a>
+          <br>
+          <a href="data\ROB_550_Report_PM_Group6.pdf">Report</a>
+          <p></p>
+          <p>
+            In the Botlab, movement control, obstacle detection, maze exploration, and self-localization functionality was developed on the MBot robot, a mobile robot platform. 
+            It is designed to explore the fundamentals of robot autonomy by developing MBot with autonomous mapping, localization, and exploration capabilities.
+        </td>
+      </tr>
+      
+      <script>
+      function r2r_start_3() {
+        document.getElementById('bot_image').style.opacity = "1";
+      }
+      
+      function r2r_stop_3() {
+        document.getElementById('bot_image').style.opacity = "0";
+      }
+      
+      // 页面加载时默认隐藏视频
+      r2r_stop_3();
+      </script>
+    <!--视频44444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444-->
+
+    <!--视频55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555-->
+    <style>
+      /* 样式调整，保证图片和视频尺寸一致 */
+      .one {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1; /* 保持正方形 */
+      }
+      
+      .two {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0; /* 初始隐藏视频 */
+        transition: opacity 0.2s ease-in-out;
+      }
+      
+      .one img,
+      .one video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      </style>
+      
+      <tr onmouseout="r2r_stop_4()" onmouseover="r2r_start_4()">
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id="arm_image">
+              <video muted autoplay loop playsinline>
+                <source src="images/arm.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <img src="images/arm.jpg" alt="LP Preview">
+          </div>
+        </td>
+        
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://github.com/Jinjaguo/ROB550-Armlab">
+            <span class="papertitle">Robust Detecting and Palletizing with Robot Arm</span>
+          </a>
+          <br>
+          <a href="https://github.com/Jinjaguo/ROB550-Armlab">Project page</a> /
+          <a href="data\s012-t08-armlab-f24.pdf">Report</a>
+          <p></p>
+          <p>
+            In the Armlab, a 5-DOF robotic arm fully autonomously arranges blocks of different sizes, colors and positions into the desired arrangement. 
+            Numerical inverse kinematics is used to determine the appropriate waypoints. An overhead LiDAR Camera is utilized to identify blocks on the board.
+          </p>
+        </td>
+      </tr>
+      
+      <script>
+      function r2r_start_4() {
+        document.getElementById('arm_image').style.opacity = "1";
+      }
+      
+      function r2r_stop_4() {
+        document.getElementById('arm_image').style.opacity = "0";
+      }
+      
+      // 页面加载时默认隐藏视频
+      r2r_stop_4();
+      </script>
+    <!--视频5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555-->
+
+    <!--视频6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666-->
+    <style>
+      /* 样式调整，保证图片和视频尺寸一致 */
+      .one {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1; /* 保持正方形 */
+      }
+      
+      .two {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0; /* 初始隐藏视频 */
+        transition: opacity 0.2s ease-in-out;
+      }
+      
+      .one img,
+      .one video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      </style>
+      
+      <tr onmouseout="r2r_stop_5()" onmouseover="r2r_start_5()">
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id="cap_image">
+              <video muted autoplay loop playsinline>
+                <source src="images/capture.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <img src="images/cap.png" alt="LP Preview">
+          </div>
+        </td>
+        
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="data\GRUOP21">
+            <span class="papertitle">Robust Detecting and Palletizing with Robot Arm</span>
+          </a>
+          <br>
+          <a href="data\GRUOP21">Report</a>
+          <p></p>
+          <p>
+            In the Armlab, a 5-DOF robotic arm fully autonomously arranges blocks of different sizes, colors and positions into the desired arrangement. 
+            Numerical inverse kinematics is used to determine the appropriate waypoints. An overhead LiDAR Camera is utilized to identify blocks on the board.
+          </p>
+        </td>
+      </tr>
+      
+      <script>
+      function r2r_start_5() {
+        document.getElementById('cap_image').style.opacity = "1";
+      }
+      
+      function r2r_stop_5() {
+        document.getElementById('cap_image').style.opacity = "0";
+      }
+      
+      // 页面加载时默认隐藏视频
+      r2r_stop_5();
+      </script>
+    <!--视频6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666-->
 
 
-      <!--纯图片-->
-        <tr>
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src="images/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <a href="https://drive.google.com/file/d/1YvRx-4hrZoCk-nl6OgVJZlHAqOiN5hWq/view?usp=sharing">
-              <span class="papertitle">Cleaning the USNO-B Catalog Through Automatic Detection of Optical Artifacts</span>
-            </a>
-            <br>
-            <strong>Jonathan T. Barron</strong>, <a href="http://stumm.ca/">Christopher Stumm</a>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
-            <br>
-            <em>The Astronomical Journal</em>, 135, 2008
-            <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
-            <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a></p>
-          </td>
-        </tr>
-      <!--纯图片-->
-
-
-
-
-          </tbody></table>
-					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
-            <tr>
-              <td>
-                <h2>Publications</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    </tbody></table>
+    <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+      <tr>
+        <td>
+          <h2>Publications</h2>
+        </td>
+      </tr>
+    </tbody></table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
-           
-            <!--纯图片-->
-        <tr>
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src="images/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <a href="https://drive.google.com/file/d/1YvRx-4hrZoCk-nl6OgVJZlHAqOiN5hWq/view?usp=sharing">
-              <span class="papertitle">Cleaning the USNO-B Catalog Through Automatic Detection of Optical Artifacts</span>
-            </a>
-            <br>
-            <strong>Jonathan T. Barron</strong>, <a href="http://stumm.ca/">Christopher Stumm</a>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
-            <br>
-            <em>The Astronomical Journal</em>, 135, 2008
-            <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
-            <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a></p>
-          </td>
-        </tr>
+        
+    <!--纯图片-->
+    <tr>
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <img src="images/cla.png" alt="clean-usnob" width="160" height="160">
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/abstract/document/9981003">
+          <span class="papertitle">An industrial mineral raw material classification method based on image segmentation</span>
+        </a>
+        <br>
+        Xuewen Xiao, <strong>jinjia Guo</strong>, Xin Cao, Xiaohui Zhang, Shuyang Pang</a>
+        <br>
+        <em>2022 International Conference on Manufacturing, Industrial Automation and Electronics (ICMIAE)
+        <p>We developed a Unet++-based image segmentation method for mineral raw material classification, achieving 92.86% precision by accurately identifying and distinguishing particle types at the pixel level.</p>
+      </td>
+    </tr>
+    <!--纯图片-->
+
+
+    <!--纯图片-->
+    <tr>
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <img src="images/seg.png" alt="clean-usnob" width="160" height="160">
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/abstract/document/10394395">
+          <span class="papertitle">A Multi-Distance Feature Dissimilarity-Guided Encoder-Decoder Network for Polyp Segmentation</span>
+        </a>
+        <br>
+        Xianchao Zhang, <strong>jinjia Guo</strong>, Nan Mu, <a href=https://www.mtu.edu/biomedical/people/faculty/jiang/Jingfeng>Jingfeng Jiang</a> </a>
+        <br>
+        <em>2023 IEEE International Conference on Systems, Man, and Cybernetics (SMC)
+        <p>We propose a multi-distance feature dissimilarity-guided encoder-decoder network, combining MDDM and HLM modules, to achieve more accurate polyp segmentation across diverse datasets by effectively capturing and supervising multi-scale feature differences.</p>
+      </td>
+    </tr>
+    <!--纯图片-->
+
       <!--纯图片-->
-
-
-            <!--纯图片-->
-        <tr>
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src="images/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <a href="https://drive.google.com/file/d/1YvRx-4hrZoCk-nl6OgVJZlHAqOiN5hWq/view?usp=sharing">
-              <span class="papertitle">Cleaning the USNO-B Catalog Through Automatic Detection of Optical Artifacts</span>
-            </a>
-            <br>
-            <strong>Jonathan T. Barron</strong>, <a href="http://stumm.ca/">Christopher Stumm</a>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
-            <br>
-            <em>The Astronomical Journal</em>, 135, 2008
-            <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
-            <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a></p>
-          </td>
-        </tr>
-      <!--纯图片-->
-
-            <!--纯图片-->
-        <tr>
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src="images/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <a href="https://drive.google.com/file/d/1YvRx-4hrZoCk-nl6OgVJZlHAqOiN5hWq/view?usp=sharing">
-              <span class="papertitle">Cleaning the USNO-B Catalog Through Automatic Detection of Optical Artifacts</span>
-            </a>
-            <br>
-            <strong>Jonathan T. Barron</strong>, <a href="http://stumm.ca/">Christopher Stumm</a>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
-            <br>
-            <em>The Astronomical Journal</em>, 135, 2008
-            <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
-            <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a></p>
-          </td>
-        </tr>
+      <tr>
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <img src="images/sla.png" alt="clean-usnob" width="160" height="160">
+        </td>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://www.researchgate.net/publication/375695294_Learning_How_to_Detect_Salient_Objects_in_Nighttime_Scenes">
+            <span class="papertitle">Learning How to Detect Salient Objects in Nighttime Sceness</span>
+          </a>
+          <br>
+          Nan Mu, <strong>jinjia Guo</strong>, <a href=https://www.mtu.edu/biomedical/people/faculty/jiang/Jingfeng>Jingfeng Jiang</a> </a>
+          <br>
+          <em>Journal of Scientific & Industrial Research </em>2023
+          <p>We proposed MBNet, a novel network combining high-low feature aggregation and hierarchical supervision for salient object detection in nighttime scenes, achieving superior performance over seven state-of-the-art methods on a newly built low-light dataset.</p>
+        </td>
+      </tr>
       <!--纯图片-->
 
 
@@ -420,40 +601,101 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+        <style>
+          /* 可放到你全局的 stylesheet.css 中 */
+          .company-logo {
+            display: block;
+            max-width: 80px;    /* Logo 最大宽度，可根据需要调整 */
+            height: auto;
+            margin: 0 auto;     /* 水平居中 */
+          }
+          .work-comp {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 4px;
+          }
+          .work-title {
+            font-weight:italic;
+            font-size: 14px;
+          }
+          .work-period {
+            font-style: italic;
+            color: #555;
+            font-size: 14px;
+          }
+        </style>
+        
+        <table>
+          <!-- 一条实习经历 -->
+          <tr>
+            <!-- 左侧：公司 Logo -->
+            <td align="center" style="padding:16px; width:20%; vertical-align:middle;">
+              <img class="company-logo" src="images/fitten.png" alt="Company Logo">
+            </td>
+        
+            <!-- 右侧：公司名称 / 职位 / 时间 -->
+            <td style="padding:8px; width:80%; vertical-align:middle;">
+              <div class="work-comp">Fitten Technology Co., Ltd.</div>
+              <div class="work-title">LLM Research Assistant</div>
+              <div class="work-period">May/2024 - August/2024</div>
+              <p>Applied RAG in JittorLLM, a large language code completion model based on the self-developed framework: Jittor.
+                The model reduces latency by 70% and improves accuracy by 20% compared with Copilot.</p>
+            </td>
+          </tr>
+          <!-- 一条实习经历 -->
+          <tr>
+            <td align="center" style="padding:16px; width:20%; vertical-align:middle;">
+              <img class="company-logo" src="images/uc.png" alt="Another Company Logo">
+            </td>
+            <td style="padding:8px; width:80%; vertical-align:middle;">
+              <div class="work-comp">University of Cincinnati</div>
+              <div class="work-title">Peer-TA in College of Engineering and Applied Science</div>
+              <div class="work-period">August/2023 - April/2024</div>
+              <p>Demonstrated strong written and verbal communication skills by providing clear, constructive feedback on assign-
+                ments for a cohort of 103 students, ensuring high standards of professionalism and efficiency.</p>
+            </td>
+          </tr>
+          <!-- 一条实习经历 -->
+          <tr>
+            <td align="center" style="padding:16px; width:20%; vertical-align:middle;">
+              <img class="company-logo" src="images/mtu.png" alt="Another Company Logo">
+            </td>
+            <td style="padding:8px; width:80%; vertical-align:middle;">
+              <div class="work-comp">Michigan Technological University </div>
+              <div class="work-title">Research Assistant</div>
+              <div class="work-period">August/2022 - December/2022, April/2023 - August/2023</div>
+              <p>Designed and implemented a new salient object detection network tailored for medical imaging, utilizing multi-scale
+                fusion in neural networks to achieve a performance improvement of over 10%.</p>
+            </td>
+          </tr>
+          <!-- 一条实习经历 -->
+          <tr>
+            <td align="center" style="padding:16px; width:20%; vertical-align:middle;">
+              <img class="company-logo" src="images/cisdi.jpg" alt="Another Company Logo">
+            </td>
+            <td style="padding:8px; width:80%; vertical-align:middle;">
+              <div class="work-comp">CISDI INFORMATION Technology Co., Ltd. </div>
+              <div class="work-title">Computer Vision Algorithm Assistant</div>
+              <div class="work-period">May/2021 - August/2021, January/2022 - April/2022</div>
+              <p>Created a dataset for raw-material classification and segmentation and developed a Unet++ algorithm for granularity
+                detection on belt machines for Magang (Group) Holding Co., Ltd.</p>
+            </td>
+          </tr>
+        </table>
+        
 
-                  
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #edd892;">
-								 <h2>Teaching</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-
-
-
-
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
+      </tbody></table>
+      <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:0px">
+            <br>
+            <p style="text-align:center; font-size:small;">
+              Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
+              <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash;
+              use the GitHub code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s
+              <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+      
