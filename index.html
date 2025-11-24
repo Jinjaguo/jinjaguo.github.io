@@ -46,11 +46,11 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research Intersts</h2>
+                <h2>Research Interests</h2>
                 <p>
-                  My primary research interest lies in robot perception and planning for autonomous systems, particularly enabling robots to accomplish practical, everyday tasks.
-                  Motivated by the challenge highlighted by <a href="https://en.wikipedia.org/wiki/Moravec%27s_paradox">Moravec's paradox</a> — that robots struggle with real-world tasks that are effortless for humans.
-                  I focus on developing methods that leverage multi-modal sensory data (such as RGB-D, point clouds, LiDAR, and force sensing) to build robust and generalizable policies and planning frameworks, empowering robots to perform physical tasks more reliably and effectively.
+                  I am broadly interested in <b>embodied intelligence</b> at the intersection of <b>robot learning, long-horizon planning, and contact-rich manipulation</b>. 
+                  Motivated by <a href="https://en.wikipedia.org/wiki/Moravec%27s_paradox">Moravec's paradox</a>—that tasks trivial for humans can be surprisingly hard for machines—my long-term goal is to build 
+                  <b>robotic systems that can autonomously accomplish everyday tasks in realistic, unstructured environments</b>.
                 </p>
               </td>
             </tr>
@@ -113,6 +113,79 @@
       </td>
     </tr>
     -->
+
+
+    <!--第一个项目-->
+    <style>
+      /* 样式调整，保证图片和视频尺寸一致 */
+      .one {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1; /* 保持正方形 */
+      }
+      
+      .two {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0; /* 初始隐藏视频 */
+        transition: opacity 0.2s ease-in-out;
+      }
+      
+      .one img,
+      .one video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      </style>
+      
+      <tr onmouseout="r2r1_stop()" onmouseover="r2r1_start()">
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id="ios_image">
+              <video muted autoplay loop playsinline>
+                <source src="images/open.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <img src="images/open.png" alt="open Preview">
+          </div>
+        </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://github.com/Jinjaguo/ROB442-EECS465/tree/main/Rob422_HW/Final_Project">
+          <span class="papertitle">Interactive Object Search Benchmark</span>
+        </a>
+        <br>
+        <!--a href="https://github.com/Jinjaguo/ROB442-EECS465/tree/main/Rob422_HW/Final_Project">Project page</a> /
+        <a href="data/Search_Based_Planning_for_PR2__ANA__vs_A__with_Custom_Heuristics.pdf">Report</a-->
+        <p></p>
+        <p>
+            We are building a photorealistic, physics-based benchmark for interactive object search, where a mobile manipulator must 
+            navigate multi-room homes, open articulated furniture, and grasp target objects based on high-level language instructions.
+            The benchmark is constructed by procedurally generating Infinigen indoor scenes and importing them into IsaacSim, 
+            with articulated doors, cabinets, and drawers, and 200+ object categories. 
+        </p>
+      </td>
+    </tr>
+
+    <script>
+    function r2r1_start() {
+      document.getElementById('ios_image').style.opacity = "1";
+    }
+    
+    function r2r1_stop() {
+      document.getElementById('ios_image').style.opacity = "0";
+    }
+    
+    // 页面加载时默认隐藏视频
+    r2r1_stop();
+    </script>
+
+
 
     <!--视频111111111111111111111111111111111111111111111111111111-->
     <style>
